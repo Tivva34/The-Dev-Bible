@@ -1,0 +1,276 @@
+.example-list {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.category-header-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+.layout-switcher {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: flex-end;
+  padding: 0.25rem;
+  background: #0f172a;
+  border: 1px solid #243044;
+  border-radius: 8px;
+}
+
+.layout-option {
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+  text-align: center;
+  color: #cbd5e1;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.layout-option:hover {
+  background: #1d2940;
+  border-color: #38bdf8;
+}
+
+.layout-option.is-active {
+  color: #f8fafc;
+  background: #0f3a5c;
+  border-color: #38bdf8;
+}
+
+.live-filter-stack {
+  display: grid;
+  gap: 0.35rem;
+  justify-items: end;
+}
+
+.live-filter-tags,
+.framework-filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
+  max-width: 42rem;
+}
+
+.live-filter-tag,
+.framework-filter-tag {
+  min-height: 1.8rem;
+  padding: 0.3rem 0.55rem;
+  color: #cbd5e1;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.live-filter-tag:hover,
+.framework-filter-tag:hover {
+  color: #f8fafc;
+  background: #1d2940;
+  border-color: #38bdf8;
+}
+
+.live-filter-tag.is-active {
+  color: #082f49;
+  background: #7dd3fc;
+  border-color: #bae6fd;
+}
+
+.framework-filter-tag.is-active {
+  color: #f8fafc;
+  background: #14532d;
+  border-color: #22c55e;
+}
+
+.category-section {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.category-header {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.category-header h2 {
+  margin: 0;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
+.category-header p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.86rem;
+}
+
+.challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.75rem;
+}
+
+.example-title-button {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  width: 100%;
+  min-height: 4.75rem;
+  padding: 0.85rem;
+  text-align: left;
+  color: #f9fafb;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.example-title-button:hover {
+  background: #1d2940;
+  border-color: #38bdf8;
+}
+
+.challenge-index {
+  display: grid;
+  place-items: center;
+  width: 1.85rem;
+  height: 1.85rem;
+  color: #bae6fd;
+  background: #0c4a6e;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.challenge-copy {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.challenge-copy strong {
+  font-size: 0.95rem;
+}
+
+.challenge-copy small {
+  color: #9ca3af;
+  font-size: 0.84rem;
+}
+
+@media (max-width: 560px) {
+  .category-header-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.45rem;
+  }
+
+  .layout-switcher {
+    justify-content: flex-end;
+    padding: 0.18rem;
+  }
+
+  .layout-option {
+    min-height: 1.65rem;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.66rem;
+  }
+
+  .live-filter-stack {
+    justify-items: end;
+    gap: 0.24rem;
+  }
+
+  .live-filter-tags,
+  .framework-filter-tags {
+    justify-content: flex-end;
+    gap: 0.24rem;
+  }
+
+  .live-filter-tag,
+  .framework-filter-tag {
+    min-height: 1.4rem;
+    padding: 0.18rem 0.34rem;
+    font-size: 0.6rem;
+  }
+
+  .category-header h2 {
+    font-size: 0.86rem;
+  }
+
+  .challenge-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .example-title-button {
+    min-height: 3.65rem;
+    gap: 0.45rem;
+    padding: 0.5rem;
+  }
+
+  .challenge-index {
+    width: 1.35rem;
+    height: 1.35rem;
+    font-size: 0.68rem;
+  }
+
+  .challenge-copy strong {
+    font-size: 0.74rem;
+  }
+
+  .challenge-copy small {
+    font-size: 0.64rem;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .category-header-row {
+    gap: 0.65rem;
+  }
+
+  .live-filter-stack {
+    gap: 0.28rem;
+  }
+
+  .live-filter-tags,
+  .framework-filter-tags {
+    gap: 0.28rem;
+  }
+
+  .live-filter-tag,
+  .framework-filter-tag {
+    min-height: 1.55rem;
+    padding: 0.22rem 0.42rem;
+    font-size: 0.68rem;
+  }
+
+  .challenge-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .example-title-button {
+    min-height: 4.15rem;
+    gap: 0.55rem;
+    padding: 0.65rem;
+  }
+
+  .challenge-index {
+    width: 1.55rem;
+    height: 1.55rem;
+    font-size: 0.78rem;
+  }
+
+  .challenge-copy strong {
+    font-size: 0.84rem;
+  }
+
+  .challenge-copy small {
+    font-size: 0.74rem;
+  }
+}

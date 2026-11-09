@@ -1,0 +1,352 @@
+.live-lab-detail {
+  display: grid;
+  gap: 1rem;
+}
+
+.live-lab-topbar {
+  display: none;
+}
+
+.live-lab-compact-controls {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, auto) minmax(10rem, auto);
+  gap: 0.65rem;
+  align-items: stretch;
+}
+
+.live-lab-compact-left {
+  display: contents;
+}
+
+.live-lab-compact-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  order: 3;
+  align-items: center;
+  align-content: start;
+  justify-content: flex-end;
+}
+
+.live-lab-header-actions,
+.live-lab-collapsed-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.live-lab-collapsed-bar {
+  justify-content: space-between;
+  padding: 0.35rem 0.45rem;
+  color: #cbd5e1;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.live-lab-collapse-button {
+  min-height: 1.9rem;
+  padding: 0.3rem 0.6rem;
+  color: #f8fafc;
+  background: #263247;
+  border: 1px solid #475569;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.live-lab-collapse-button:hover {
+  border-color: #38bdf8;
+}
+
+.live-lab-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-start;
+}
+
+.live-lab-tab {
+  min-height: 1.9rem;
+  padding: 0.3rem 0.6rem;
+  color: #cbd5e1;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  line-height: 1;
+}
+
+.live-lab-tab.is-active {
+  color: #f8fafc;
+  background: #14532d;
+  border-color: #22c55e;
+}
+
+.live-lab-layout {
+  min-width: 0;
+}
+
+.live-lab-taskbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(12rem, 0.55fr);
+  gap: 0.65rem;
+  align-items: stretch;
+}
+
+.live-lab-prompt,
+.live-lab-hints {
+  display: grid;
+  gap: 0.4rem;
+  padding: 0.7rem;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-left: 4px solid #38bdf8;
+  border-radius: 8px;
+}
+
+.live-lab-prompt {
+  order: 1;
+}
+
+.live-lab-prompt h2,
+.live-lab-hints h2 {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.76rem;
+}
+
+.live-lab-prompt p,
+.live-lab-hints p {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.live-lab-hints strong {
+  color: #fbbf24;
+}
+
+.live-lab-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  order: 2;
+  align-content: start;
+  min-width: 12rem;
+}
+
+.live-lab-answer.is-active {
+  background: #14532d;
+  border-color: #22c55e;
+}
+
+.live-lab-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(16rem, 2fr);
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.live-lab-editors {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.live-lab-editors label {
+  display: grid;
+  gap: 0.3rem;
+  min-width: 0;
+}
+
+.live-lab-editors span,
+.live-lab-preview-header {
+  width: fit-content;
+  padding: 0.22rem 0.45rem;
+  color: #bae6fd;
+  background: #0c314a;
+  border: 1px solid #155e75;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.live-lab-editors textarea {
+  width: 100%;
+  min-height: 8rem;
+  padding: 0.65rem;
+  resize: vertical;
+  color: #e5e7eb;
+  background: #020617;
+  border: 1px solid #263247;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.76rem;
+  line-height: 1.4;
+  tab-size: 2;
+}
+
+.live-lab-editors textarea:focus {
+  outline: 1px solid #38bdf8;
+  outline-offset: 1px;
+}
+
+.live-lab-preview-panel {
+  display: grid;
+  grid-template-rows: auto minmax(20rem, 1fr);
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.live-lab-preview-panel iframe {
+  width: 100%;
+  min-height: 31rem;
+  background: #ffffff;
+  border: 1px solid #263247;
+  border-radius: 8px;
+}
+
+.live-lab-solution {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.live-lab-solution pre {
+  margin: 0;
+  padding: 0.75rem;
+  overflow: auto;
+  color: #e5e7eb;
+  background: #020617;
+  border: 1px solid #263247;
+  border-radius: 8px;
+  white-space: pre-wrap;
+}
+
+.live-lab-solution code {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .live-lab-compact-controls {
+    grid-template-columns: minmax(0, 1fr) minmax(10rem, auto) minmax(8.5rem, auto);
+    gap: 0.5rem;
+  }
+
+  .live-lab-compact-tabs {
+    gap: 0.25rem;
+  }
+
+  .live-lab-taskbar {
+    grid-template-columns: minmax(0, 1fr) minmax(10.5rem, auto) minmax(11rem, 0.5fr);
+    gap: 0.5rem;
+  }
+
+  .live-lab-workspace {
+    grid-template-columns: minmax(0, 3fr) minmax(14rem, 2fr);
+    gap: 0.55rem;
+  }
+
+  .live-lab-editors textarea {
+    min-height: 7rem;
+    padding: 0.55rem;
+    font-size: 0.7rem;
+  }
+
+  .live-lab-preview-panel iframe {
+    min-height: 28rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .live-lab-detail {
+    gap: 0.65rem;
+  }
+
+  .live-lab-compact-controls {
+    grid-template-columns: minmax(0, 1fr) minmax(7.25rem, auto) minmax(6.5rem, auto);
+    gap: 0.35rem;
+  }
+
+  .live-lab-compact-tabs {
+    gap: 0.2rem;
+  }
+
+  .live-lab-tabs {
+    gap: 0.24rem;
+  }
+
+  .live-lab-collapsed-bar {
+    padding: 0.25rem 0.35rem;
+    font-size: 0.62rem;
+  }
+
+  .live-lab-collapse-button {
+    min-height: 1.45rem;
+    padding: 0.18rem 0.34rem;
+    font-size: 0.6rem;
+  }
+
+  .live-lab-tab {
+    min-height: 1.4rem;
+    padding: 0.18rem 0.34rem;
+    font-size: 0.6rem;
+  }
+
+  .live-lab-taskbar {
+    grid-template-columns: minmax(0, 1fr) minmax(7.5rem, auto) minmax(8.5rem, 0.5fr);
+    gap: 0.45rem;
+  }
+
+  .live-lab-prompt,
+  .live-lab-hints {
+    padding: 0.45rem;
+  }
+
+  .live-lab-prompt h2,
+  .live-lab-hints h2 {
+    font-size: 0.64rem;
+  }
+
+  .live-lab-prompt p,
+  .live-lab-hints p {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .live-lab-actions {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    min-width: 7.5rem;
+  }
+
+  .live-lab-workspace {
+    grid-template-columns: minmax(0, 3fr) minmax(9.5rem, 2fr);
+    gap: 0.45rem;
+  }
+
+  .live-lab-editors textarea {
+    min-height: 6rem;
+    padding: 0.45rem;
+    font-size: 0.62rem;
+    line-height: 1.3;
+  }
+
+  .live-lab-editors span,
+  .live-lab-preview-header {
+    font-size: 0.6rem;
+  }
+
+  .live-lab-preview-panel iframe {
+    min-height: 24rem;
+  }
+}

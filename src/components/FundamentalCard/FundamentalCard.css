@@ -1,0 +1,121 @@
+.fundamental-detail {
+  display: grid;
+  gap: 1rem;
+}
+
+.fundamental-layout {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.fundamental-info {
+  position: sticky;
+  top: 0.75rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.fundamental-box {
+  padding: 0.7rem;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 8px;
+}
+
+.fundamental-box h2,
+.fundamental-code-panel h2 {
+  margin: 0 0 0.3rem;
+  color: #cbd5e1;
+  font-size: 0.76rem;
+}
+
+.fundamental-box p,
+.fundamental-box li {
+  color: #f8fafc;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.fundamental-box p {
+  margin: 0;
+}
+
+.fundamental-box ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.fundamental-follow-ups {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.fundamental-follow-ups strong {
+  color: #f8fafc;
+  font-size: 0.78rem;
+}
+
+.fundamental-follow-ups p {
+  margin-top: 0.18rem;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+}
+
+.fundamental-code-panel {
+  min-width: 0;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .fundamental-layout {
+    grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
+    gap: 0.75rem;
+  }
+
+  .fundamental-info {
+    gap: 0.55rem;
+  }
+
+  .fundamental-box {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .fundamental-detail {
+    gap: 0.65rem;
+  }
+
+  .fundamental-layout {
+    grid-template-columns: minmax(9rem, 0.42fr) minmax(0, 1.58fr);
+    gap: 0.55rem;
+  }
+
+  .fundamental-info {
+    top: 0.4rem;
+    gap: 0.45rem;
+  }
+
+  .fundamental-box {
+    padding: 0.45rem;
+  }
+
+  .fundamental-box h2,
+  .fundamental-code-panel h2 {
+    font-size: 0.64rem;
+  }
+
+  .fundamental-box p,
+  .fundamental-box li,
+  .fundamental-follow-ups p {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .fundamental-follow-ups strong {
+    font-size: 0.68rem;
+  }
+}

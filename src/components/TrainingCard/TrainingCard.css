@@ -1,0 +1,379 @@
+.training-detail {
+  display: grid;
+  gap: 1rem;
+}
+
+.training-header {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.training-header h1 {
+  margin: 0;
+  font-size: 1.55rem;
+}
+
+.training-layout {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.training-category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: flex-end;
+  margin-top: -0.35rem;
+}
+
+.training-category-tab {
+  min-height: 1.9rem;
+  padding: 0.3rem 0.6rem;
+  color: #cbd5e1;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  line-height: 1;
+}
+
+.training-category-tab:hover {
+  color: #f8fafc;
+  background: #1d2940;
+  border-color: #38bdf8;
+}
+
+.training-category-tab.is-active {
+  color: #f8fafc;
+  background: #14532d;
+  border-color: #22c55e;
+}
+
+.training-side {
+  position: sticky;
+  top: 0.75rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.training-prompt-card,
+.training-hints,
+.training-follow-ups {
+  padding: 0.7rem;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 8px;
+}
+
+.training-prompt-card {
+  border-left: 4px solid #38bdf8;
+}
+
+.training-meta-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.training-meta-row span {
+  color: #bae6fd;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.training-prompt-card h2,
+.training-hints h2,
+.training-follow-ups h2 {
+  margin: 0 0 0.3rem;
+  color: #cbd5e1;
+  font-size: 0.76rem;
+}
+
+.training-prompt-card p,
+.training-hints p,
+.training-follow-up p {
+  margin: 0;
+  color: #f8fafc;
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.training-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.training-answer-button.is-active {
+  background: #14532d;
+  border-color: #22c55e;
+}
+
+.training-hints,
+.training-follow-ups {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.training-check-result {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.65rem;
+  background: #172033;
+  border: 1px solid #2d3a52;
+  border-radius: 8px;
+}
+
+.training-check-result.success {
+  border-color: #22c55e;
+  background: rgba(20, 83, 45, 0.5);
+}
+
+.training-check-result.warning {
+  border-color: #f59e0b;
+  background: rgba(120, 53, 15, 0.42);
+}
+
+.training-check-result.neutral {
+  border-color: #38bdf8;
+  background: rgba(12, 74, 110, 0.42);
+}
+
+.training-check-result strong {
+  color: #f8fafc;
+  font-size: 0.78rem;
+}
+
+.training-check-result p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.training-hints strong {
+  color: #fbbf24;
+}
+
+.training-follow-up {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.training-follow-up strong {
+  color: #f8fafc;
+  font-size: 0.78rem;
+}
+
+.training-follow-up p {
+  color: #cbd5e1;
+  font-size: 0.78rem;
+}
+
+.training-code-stack {
+  display: grid;
+  gap: 0.75rem;
+  min-width: 0;
+}
+
+.training-code-panel {
+  min-width: 0;
+}
+
+.training-code-header {
+  display: inline-grid;
+  margin: 0 0 0.35rem;
+  padding: 0.25rem 0.45rem;
+  color: #bae6fd;
+  background: #0c314a;
+  border: 1px solid #155e75;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  font-weight: 800;
+}
+
+.training-code-block {
+  min-width: 0;
+  margin: 0;
+  padding: 0.85rem;
+  overflow: auto;
+  color: #e5e7eb;
+  background: #020617;
+  border: 1px solid #263247;
+  border-radius: 8px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.training-code-editor {
+  width: 100%;
+  min-height: 26rem;
+  padding: 0.85rem;
+  resize: vertical;
+  color: #e5e7eb;
+  background: #020617;
+  border: 1px solid #263247;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  white-space: pre;
+  overflow: auto;
+  tab-size: 2;
+}
+
+.training-code-editor.support-editor {
+  min-height: 9rem;
+}
+
+.training-code-editor:focus {
+  outline: 1px solid #38bdf8;
+  outline-offset: 1px;
+}
+
+.training-code-block code {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  .training-layout {
+    grid-template-columns: minmax(12rem, 0.45fr) minmax(0, 1.55fr);
+    gap: 0.75rem;
+  }
+
+  .training-side {
+    gap: 0.55rem;
+  }
+
+  .training-category-tabs {
+    gap: 0.28rem;
+  }
+
+  .training-category-tab {
+    min-height: 1.55rem;
+    padding: 0.22rem 0.42rem;
+    font-size: 0.68rem;
+  }
+
+  .training-prompt-card,
+  .training-hints,
+  .training-follow-ups {
+    padding: 0.6rem;
+  }
+
+  .training-actions {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
+  .training-code-block {
+    padding: 0.7rem;
+  }
+
+  .training-code-editor {
+    min-height: 24rem;
+    padding: 0.7rem;
+    font-size: 0.78rem;
+  }
+
+  .training-code-editor.support-editor {
+    min-height: 7.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .training-detail {
+    gap: 0.65rem;
+  }
+
+  .training-header {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: 0.55rem;
+  }
+
+  .training-header h1 {
+    font-size: 1rem;
+  }
+
+  .training-layout {
+    grid-template-columns: minmax(9rem, 0.42fr) minmax(0, 1.58fr);
+    gap: 0.55rem;
+  }
+
+  .training-category-tabs {
+    gap: 0.24rem;
+  }
+
+  .training-category-tab {
+    min-height: 1.4rem;
+    padding: 0.18rem 0.34rem;
+    font-size: 0.6rem;
+  }
+
+  .training-side {
+    top: 0.4rem;
+    gap: 0.45rem;
+  }
+
+  .training-prompt-card,
+  .training-hints,
+  .training-follow-ups {
+    padding: 0.45rem;
+  }
+
+  .training-prompt-card h2,
+  .training-hints h2,
+  .training-follow-ups h2 {
+    font-size: 0.64rem;
+  }
+
+  .training-prompt-card p,
+  .training-hints p,
+  .training-follow-up p {
+    font-size: 0.68rem;
+    line-height: 1.25;
+  }
+
+  .training-meta-row span,
+  .training-follow-up strong,
+  .training-code-header {
+    font-size: 0.62rem;
+  }
+
+  .training-actions {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .training-code-stack {
+    gap: 0.55rem;
+  }
+
+  .training-code-block {
+    padding: 0.55rem;
+  }
+
+  .training-code-editor {
+    min-height: 22rem;
+    padding: 0.55rem;
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+
+  .training-code-editor.support-editor {
+    min-height: 6.5rem;
+  }
+
+  .training-code-block code {
+    font-size: 0.68rem;
+    line-height: 1.35;
+  }
+}
