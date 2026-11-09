@@ -131,14 +131,25 @@ The-Dev-Bible/
     │   ├── QuestionCard/        # Expandable interview Q&A with tag filtering
     │   └── TrainingCard/        # Syntax practice drills with check feedback
     ├── data/
-    │   ├── challenges/          # Challenge implementations (React, JS, Vue, Angular, Fullstack)
     │   ├── examples.js          # Navigation layout groupings
-    │   ├── fundamentals.js      # Concept guides and code snippets
-    │   ├── fullstackQuestions.js# Fullstack & backend interview questions
-    │   ├── interviewQuestions.js# Curated technical & architectural interview questions
-    │   ├── liveLabChallenges.js # Sandbox practice challenges
-    │   └── trainingChallenges.js# Targeted training exercises
-    └── i18n/                    # Localization harness, context, and dictionaries
+    │   ├── interview/           # Curated technical and architectural interview questions
+    │   │   ├── fullstackQuestions.js
+    │   │   ├── interviewQuestions.js
+    │   │   ├── questions.en.js / questions.sv.js
+    │   │   └── questionFollowUps.en.js / questionFollowUps.sv.js
+    │   ├── practice/            # Fundamentals, LiveLab sandboxes, and training exercises
+    │   │   ├── fundamentals.js (fundamentals.en.js / fundamentals.sv.js)
+    │   │   ├── liveLabChallenges.js (liveLabChallenges.en.js / liveLabChallenges.sv.js)
+    │   │   └── trainingChallenges.js (trainingChallenges.en.js / trainingChallenges.sv.js)
+    │   └── challenges/          # Challenge catalog by category and framework
+    │       ├── angular/         # Angular component and state challenges (e.g. angularComponents.js, angularAdvanced.js)
+    │       ├── fullstack/       # Backend and API endpoint challenges (e.g. endpoints.js)
+    │       ├── javascript/      # JS algorithms, utility functions, and DOM (e.g. algorithms.js, domInteractions.js)
+    │       ├── react/           # React components, hooks, widgets, and state (e.g. components.js, hooksAndState.js)
+    │       ├── vue/             # Vue composition and component challenges (e.g. vueComponents.js, vueAdvanced.js)
+    │       ├── helpers/         # Builders and challenge helpers (e.g. snippetChallengeBuilder.js)
+    │       └── i18n/            # Translations, comments, and follow-up dictionaries (e.g. challengeTranslations.js)
+    └── i18n/                    # Localization harness, context, and UI dictionaries
 ```
 
 ---
@@ -183,4 +194,3 @@ Please submit issues or pull requests via GitHub.
 
 For full details on file boundaries and license scopes, see [LICENSE.md](LICENSE.md).
 
-For full details on file boundaries and license scopes, see [LICENSE.md](LICENSE.md).
